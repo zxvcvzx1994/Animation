@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e61c1c"
+    tools:context="vo.cvcompany.com.myapplication.MainActivity">
+
+   <ImageView
+       android:id="@+id/img"
+       android:src="@mipmap/ic_launcher_round"
+       android:layout_width="100dp"
+       android:layout_height="0dp"
+       tools:layout_constraintTop_creator="1"
+       tools:layout_constraintRight_creator="1"
+       app:layout_constraintRight_toRightOf="parent"
+       tools:layout_constraintLeft_creator="1"
+       app:layout_constraintLeft_toLeftOf="parent"
+       tools:layout_constraintBottom_creator="1"
+       app:layout_constraintBottom_toBottomOf="@+id/imgMoto"
+       app:layout_constraintTop_toTopOf="@+id/imgMoto" />
+   <ImageView
+       android:id="@+id/imgRingbell"
+       android:src="@mipmap/ic_ringbell"
+       android:layout_width="103dp"
+       android:layout_height="96dp"
+
+       tools:layout_constraintLeft_creator="1"
+       tools:layout_constraintBottom_creator="1"
+       android:layout_marginStart="13dp"
+       app:layout_constraintBottom_toBottomOf="parent"
+       android:layout_marginBottom="92dp"
+       app:layout_constraintLeft_toLeftOf="@+id/img"
+       android:layout_marginLeft="13dp" />
+   <ImageView
+       android:id="@+id/imgMoto"
+       android:src="@mipmap/ic_moto"
+       android:layout_width="100dp"
+       android:layout_height="100dp"
+       tools:layout_constraintTop_creator="1"
+       tools:layout_constraintLeft_creator="1"
+       app:layout_constraintLeft_toLeftOf="parent"
+       app:layout_constraintTop_toTopOf="parent"
+       android:layout_marginLeft="242dp"
+       android:layout_marginTop="160dp"
+       android:layout_marginStart="242dp" />
+
+   <ImageView
+       android:id="@+id/imgScale"
+       android:src="@mipmap/ic_caythong"
+       android:layout_width="100dp"
+       android:layout_height="100dp"
+       tools:layout_constraintRight_creator="1"
+       tools:layout_constraintBottom_creator="1"
+       app:layout_constraintBottom_toTopOf="@+id/img"
+       android:layout_marginEnd="44dp"
+       app:layout_constraintRight_toRightOf="@+id/img"
+       android:layout_marginBottom="13dp"
+       android:layout_marginRight="44dp" />
+   <Button
+       android:id="@+id/btnStartActivity"
+       android:text="Activity 2"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content" />
+
+</android.support.constraint.ConstraintLayout>
